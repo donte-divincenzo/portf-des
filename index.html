@@ -34,7 +34,7 @@
     <section id="about">
         <h2>Обо мне</h2>
         <div class="about-content">
-            <img style="object-fit: cover;" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Мое фото">
+            <img src="profile.jpg" alt="Мое фото">
             <div class="bio">
                 <p>Меня зовут [Имя]. Я профессиональный дизайнер с более чем 10-летним опытом.</p>
                 <p>Моя миссия - создавать уникальные и эффективные дизайны для моих клиентов.</p>
@@ -62,36 +62,46 @@
 
     <section id="portfolio">
         <h2>Портфолио</h2>
-        <div class="gallery">
-            <div class="project">
-                <img src="https://images.unsplash.com/photo-1719032168861-994a74306944?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Проект 1">
-                <div class="project-info">
-                    <h3>Проект 1</h3>
-                    <p>Описание проекта</p>
+        <div class="slider">
+            <button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            <div class="slides">
+                <div class="slide">
+                    <img src="project1.jpg" alt="Проект 1">
+                    <div class="project-info">
+                        <h3>Проект 1</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="project2.jpg" alt="Проект 2">
+                    <div class="project-info">
+                        <h3>Проект 2</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="project1.jpg" alt="Проект 1">
+                    <div class="project-info">
+                        <h3>Проект 1</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="project2.jpg" alt="Проект 2">
+                    <div class="project-info">
+                        <h3>Проект 2</h3>
+                        <p>Описание проекта</p>
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="project2.jpg" alt="Проект 2">
+                    <div class="project-info">
+                        <h3>Проект 2</h3>
+                        <p>Описание проекта</p>
+                    </div>
                 </div>
             </div>
-            <div class="project">
-                <img src="https://images.unsplash.com/photo-1719032168861-994a74306944?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Проект 2">
-                <div class="project-info">
-                    <h3>Проект 2</h3>
-                    <p>Описание проекта</p>
-                </div>
-            </div>
-            <div class="project">
-                <img src="https://images.unsplash.com/photo-1719032168861-994a74306944?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Проект 2">
-                <div class="project-info">
-                    <h3>Проект 2</h3>
-                    <p>Описание проекта</p>
-                </div>
-            </div>
-            <div class="project">
-                <img src="https://images.unsplash.com/photo-1719032168861-994a74306944?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Проект 2">
-                <div class="project-info">
-                    <h3>Проект 2</h3>
-                    <p>Описание проекта</p>
-                </div>
-            </div>
-            <!-- Больше проектов -->
+            <button class="next" onclick="changeSlide(1)">&#10095;</button>
         </div>
     </section>
 
@@ -117,7 +127,6 @@
                 <p>Полезные советы для начинающих дизайнеров.</p>
                 <a href="#">Читать дальше</a>
             </div>
-            <!-- Больше постов -->
         </div>
     </section>
 
@@ -151,5 +160,7 @@
             <a href="#">Dribbble</a>
         </div>
     </footer>
+
+    <script src="scripts.js"></script>
 </body>
 </html>

@@ -3,11 +3,6 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    scroll-behavior: smooth;
-}
-
-::-webkit-scrollbar {
-    display: none;
 }
 
 header {
@@ -42,7 +37,7 @@ header nav ul li a {
 .banner {
     text-align: center;
     padding: 100px 20px;
-    background: url('https://images.unsplash.com/photo-1715449187020-e090eb0dc3d2?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D') no-repeat center center/cover;
+    background: url('banner.jpg') no-repeat center center/cover;
     color: white;
 }
 
@@ -136,13 +131,6 @@ section h2 {
     text-align: left;
 }
 
-#contact {
-    flex-direction: column;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 .contact-form {
     text-align: left;
 }
@@ -174,4 +162,53 @@ footer .social-media a {
     color: white;
     margin: 0 10px;
     text-decoration: none;
+}
+
+.slider {
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.slides {
+    display: flex;
+    overflow: hidden;
+}
+
+.slide {
+    min-width: 100%;
+    transition: 0.5s ease;
+}
+
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev {
+    left: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover, .next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.project-info {
+    padding: 20px;
+    text-align: left;
 }
